@@ -1,0 +1,42 @@
+Django tutorial
+
+INITIAL PROJECT FILES CREATED BY DJANGO:
+
+1.__init__.py file -->
+	*. Blank file
+	*. This make the folder as a python package
+	
+2.settings.py -->
+	*.Project settings, Configurations, installed applications, database config., middleware config.
+	
+3.urls.py -->
+	*. All url patterns will be stored here
+	
+4.wsgi.py --> Web Server Gateway Interface 
+	*.This application is useful when we deploy our application into production server
+	
+5.asgi.py -->
+	*. Using to handle Asynchronous things
+
+6.manage.py -->
+	*. Running our server, running testes , creating migrations
+	
+	
+	
+HOW TO START DJANGO PROJECT IN TERMINAL:
+
+1.django-admin startproject projectname  -->   To create a django project
+
+2.4.python3 manage.py startapp applicationName   -->  To create a project
+
+3.~/MyDajangoProjects/firstProject$ python3 manage.py runserver	 --> To start the django server
+
+4.open your setting.py file and put your application name to INSTALLED APPS array.
+
+5.open views.py - write business logic 
+
+6.open urls.py - add url path to url-pattern
+
+7.python3 manage.py runserver  -->    to start the server
+  
+8.Ctrl+c  -->  stop the server
