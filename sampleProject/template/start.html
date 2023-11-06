@@ -1,3 +1,6 @@
+{% extends 'common.html' %} <!--USED TO EXTEND THE CONTENT IN ANOTHER HTML FILE-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +20,15 @@
     </style>
 </head>
 <body>
+    {% block content %}
     <div class="container">
         <div style="border:2px solid crimson; width: 300px;  text-align: center;">
             <h2>Random Names!!</h2><br>
             <h3 style="color: crimson;">Hello {{names}}</h3>
+            <h3>{{date}}<h3>
         </div>
     </div>
+    {% endblock %}
 </body>
 </html>
+
