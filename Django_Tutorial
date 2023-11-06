@@ -27,7 +27,7 @@ HOW TO START DJANGO PROJECT IN TERMINAL:
 
 1.django-admin startproject projectname  -->   To create a django project
 
-2.4.python3 manage.py startapp applicationName   -->  To create a project
+2.python3 manage.py startapp applicationName   -->  To create a application inside a project
 
 3.~/MyDajangoProjects/firstProject$ python3 manage.py runserver	 --> To start the django server
 
@@ -40,3 +40,6 @@ HOW TO START DJANGO PROJECT IN TERMINAL:
 7.python3 manage.py runserver  -->    to start the server
   
 8.Ctrl+c  -->  stop the server
+
+
+
