@@ -22,10 +22,10 @@ from timeApp import views as time_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',home_view.home),
-    path('aboutUs/',about_view.about),
-    path('product/',product_view.product),
-    path('aboutUs/contact/',about_view.contact),
-    path('time/',time_view.getTime),
+    path('home/', home_view.home),
+    path('aboutUs/', about_view.about),
+    path('product/', product_view.product),
+    path('aboutUs/contact/', about_view.contact),
+    path('time/', time_view.getTime),
 
 ]
