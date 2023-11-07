@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    
+    {% block title %}{% endblock %}
     <style>
         .container
         {
@@ -17,10 +18,32 @@
             align-items: center;
             overflow: hidden;
         }
+        label
+        {
+            margin:5px;
+        }
+        button
+        {
+            margin-left: 10px;
+        }
     </style>
 </head>
-<body>
+<body>  
     {% block content %}
+    <form action="execute/" method="POST">
+        {% csrf_token %}
+        <label for="num1">Num1 :</label>
+        <input type="number" name="num1" id="num1"><br>
+        <label for="num2">Num1 :</label>
+        <input type="number" name="num2" id="num2"><br>
+        <select name="operation" id="operation" style="width:100px; padding:5px; margin:5px 10px;">
+            <option value="add">add</option>
+            <option value="sub">sub</option>
+            <option value="mul">mul</option>
+        </select><br><br>
+        <button type="submit"> Add </button>
+    </form>
+    <br><br><br>
     <div class="container">
         <div style="border:2px solid crimson; width: 300px;  text-align: center;">
             <h2>Random Names!!</h2><br>
